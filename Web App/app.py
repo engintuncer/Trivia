@@ -3,7 +3,8 @@ import requests
 import random
 import html
 
-app = Flask(__name__)
+# Define Flask app with custom template folder path
+app = Flask(__name__, template_folder="Web App/Templates")
 
 # Fetch categories
 def fetch_categories():
